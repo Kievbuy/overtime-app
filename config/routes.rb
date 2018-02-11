@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'static#homepage'
+  devise_for :users
+  root to: 'static#homepag'
 end
