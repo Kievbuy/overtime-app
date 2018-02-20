@@ -19,18 +19,8 @@
 				</thead>
 				<tbody>
 				    
-				<%  a = 0 %>
 
-                <% @posts.each do |post| %>
-                    <% a += 1  %>
-                    <tr>
-                        <td><%= a  %></td>
-                        <td><%= post.date %></td>
-                        <td><%= post.rationale %></td>
-                        <td><%= "#{post.user.first_name} #{post.user.last_name}" %></td>
-                    </tr>
-                
-                <% end %>
+                <%= render @posts %>
                 
 				</tbody>
 			</table>
