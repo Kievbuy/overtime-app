@@ -18,7 +18,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
-  gem "factory_girl_rails", '~> 4.7'
+  gem 'factory_bot_rails'
 end
 
 group :development do
